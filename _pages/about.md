@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>University of British Columbia</a>. Nil Satis Nisi Optimum.
+subtitle: <a href='https://www.ubc.ca/'>University of British Columbia</a>. Nil Satis Nisi Optimum.
 
 profile:
   align: right
@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 Welcome! Here I am hoping to share a little bit about myself, the fantastic people I work with and what we work on.
 
-I am a Professor at the University of British Columbia, Canada, having worked for 15 years in manufacturing research in both academia and industry. I have secured funding for research from numerous sources (research councils and industrial partners) and my research has led to the formation of two spin out companies and numerous exploited patents. I have published over 200 papers in leading international and peer reviewed journals and hold several patents. I serve as Editor-in-Chief of Additive Manufacturing.
+I am a Professor at the University of British Columbia, Canada, having worked for 15 years in manufacturing research in both academia and industry. I have secured funding for research from numerous sources (research councils and industrial partners) and my research has led to the formation of two spin out companies and numerous exploited patents. I have published over 200 papers in leading international and peer reviewed journals on a wide array of topics including manufacturing technology, additive manufacturing, materials engineering and electrophysical processes. I serve as Editor-in-Chief of <a href='https://www.sciencedirect.com/journal/additive-manufacturing'>Additive Manufacturing</a>.
 
 I have taught across a number of topics including manufacturing processes, additive manufacturing, design and materials processing.
 
