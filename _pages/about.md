@@ -18,8 +18,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome! I am a Professor at the University of British Columbia, Canada, having worked for 15 years in manufacturing research in both academia and industry. I have secured funding for research from numerous sources (research councils and industrial partners) and my research has led to the formation of two spin out companies and numerous exploited patents. I have published over 200 papers in leading international and peer reviewed journals and hold several patents. I serve as Editor-in-Chief of Additive Manufacturing.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I have taught across a number of topics including manufacturing processes, additive manufacturing, design and materials processing.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I also maintain links with a research team at the University of Nottingham, UK, which has activities across non-conventional machining processes and additive manufacturing/3D printing. Our collaborators include Rolls-Royce and Oerlikon but we also engage internationally with leading research groups from Japan, USA, Germany and China.
