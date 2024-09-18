@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: people
-description: members of the lab or group
+description: Some of the fantastic people I have worked with over the last 20 years
 nav: true
 nav_order: 7
 
