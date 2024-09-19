@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 6
+title: post processing of additive manufactured parts
 description: a project with no image
 img:
 importance: 4
