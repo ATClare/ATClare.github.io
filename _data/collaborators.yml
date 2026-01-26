@@ -1,9 +1,11 @@
-# Example collaborators. Replace with your real list.
-# Photos should be placed in assets/img/collaborators/
-# lat/lng can be approximate (city-level is fine).
+- name: Matt Clark
+  institution: University of Nottingham
+  lat: 52.9548
+  lng: -1.1581
+  photo: assets/img/collaborators/matt_clark.jpg
 
-- name: Example Collaborator
-  institution: Example University
-  lat: 51.5074
-  lng: -0.1278
-  photo: assets/img/collaborators/example.jpg
+- name: Marco Simonelli
+  institution: Politecnico di Milano
+  lat: 45.4642
+  lng: 9.19
+  photo: assets/img/collaborators/marco_simonelli.jpg
