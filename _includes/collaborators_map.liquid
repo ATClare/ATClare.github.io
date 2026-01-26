@@ -1,0 +1,41 @@
+{% assign collabs = site.data.collaborators | default: empty %}
+<script>
+  document.addEventListener('readystatechange', () => {
+    if (document.readyState !== 'complete') return;
+
+    const data = {{ collabs | jsonify }};
+    const el = document.getElementById('collaborators-map');
+    if (!el) return;
+
+    // Basic world map
+    const map = L.map(el, { scrollWheelZoom: false });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+
+    const bounds = [];
+
+    data.forEach((c) => {
+      if (c.lat == null || c.lng == null) return;
+      const marker = L.marker([c.lat, c.lng]).addTo(map);
+      bounds.push([c.lat, c.lng]);
+
+      const photo = c.photo ? `<img src="/${c.photo.replace(/^\//, '')}" style="width:64px;height:64px;object-fit:cover;border-radius:8px;margin-right:10px;" />` : '';
+      const name = c.name ? `<div style="font-weight:600;">${c.name}</div>` : '';
+      const inst = c.institution ? `<div style="font-size:0.9em;">${c.institution}</div>` : '';
+
+      const html = `<div style="display:flex;align-items:center;">${photo}<div>${name}${inst}</div></div>`;
+
+      marker.bindPopup(html, { closeButton: false, autoClose: true, closeOnClick: false });
+      marker.on('mouseover', () => marker.openPopup());
+      marker.on('mouseout', () => marker.closePopup());
+    });
+
+    if (bounds.length) {
+      map.fitBounds(bounds, { padding: [30, 30] });
+    } else {
+      map.setView([20, 0], 2);
+    }
+  });
+</script>

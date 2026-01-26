@@ -1,0 +1,9 @@
+# Example collaborators. Replace with your real list.
+# Photos should be placed in assets/img/collaborators/
+# lat/lng can be approximate (city-level is fine).
+
+- name: Example Collaborator
+  institution: Example University
+  lat: 51.5074
+  lng: -0.1278
+  photo: assets/img/collaborators/example.jpg
