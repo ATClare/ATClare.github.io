@@ -1,0 +1,11 @@
+- name: Matt Clark
+  institution: University of Nottingham
+  lat: 52.9548
+  lng: -1.1581
+  photo: assets/img/collaborators/matt_clark.jpg
+
+- name: Marco Simonelli
+  institution: Politecnico di Milano
+  lat: 45.4642
+  lng: 9.19
+  photo: assets/img/collaborators/marco_simonelli.jpg
