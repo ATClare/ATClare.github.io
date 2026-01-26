@@ -17,6 +17,14 @@
           mapElement.classList.add('map');
           backup.after(mapElement);
 
+          // Ensure marker icon assets resolve correctly (Leaflet otherwise tries relative to the page).
+          const leafletImgBase = '{{ site.third_party_libraries.leaflet.url.images }}';
+          L.Icon.Default.mergeOptions({
+            iconRetinaUrl: `${leafletImgBase}marker-icon-2x.png`,
+            iconUrl: `${leafletImgBase}marker-icon.png`,
+            shadowUrl: `${leafletImgBase}marker-shadow.png`,
+          });
+
           var map = L.map(mapElement);
           L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
