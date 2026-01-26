@@ -3,7 +3,7 @@ layout: profiles
 permalink: /people/
 title: people
 description: Some of the fantastic people I have worked with over the last 20 years
-nav: true
+nav: false
 nav_order: 7
 
 profiles:

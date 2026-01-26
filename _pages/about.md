@@ -13,8 +13,8 @@ profile:
     <p>Mechanical Engineering</p>
     <p>Vancouver, British Columbia</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # hide news feed on homepage (minimal)
+selected_papers: false # hide selected papers block on homepage (minimal)
 social: true # includes social icons at the bottom of the page
 ---
 
