@@ -26,7 +26,14 @@
 
     data.forEach((c) => {
       if (c.lat == null || c.lng == null) return;
-      const marker = L.marker([c.lat, c.lng]).addTo(map);
+      // Simple red dot marker (avoid broken thumbnail/icon assets)
+      const marker = L.circleMarker([c.lat, c.lng], {
+        radius: 6,
+        color: '#b00020',
+        weight: 2,
+        fillColor: '#e53935',
+        fillOpacity: 0.95,
+      }).addTo(map);
       bounds.push([c.lat, c.lng]);
 
       const photo = c.photo ? `<img src="/${c.photo.replace(/^\//, '')}" style="width:64px;height:64px;object-fit:cover;border-radius:8px;margin-right:10px;" />` : '';

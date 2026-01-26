@@ -9,3 +9,14 @@
   lat: 45.4642
   lng: 9.19
   photo: assets/img/collaborators/marco_simonelli.jpg
+
+- name: Bosco Yu
+  institution: University of Victoria
+  lat: 48.4634
+  lng: -123.3117
+  photo: assets/img/collaborators/bosco_yu.jpg
+
+- name: Wes Witts
+  institution: University of Twente / NLR
+  lat: 52.2394
+  lng: 6.8522
