@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Family
+title: My Family
 permalink: /family/
 nav: true
 nav_order: 4
-description: Family
+description: My family
 ---
 
 <!-- Add photos to assets/img/family/ and update the filenames below. -->

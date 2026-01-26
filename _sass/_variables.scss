@@ -16,10 +16,10 @@ $green-color-lime: #b7d12a !default;
 $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
-$purple-color: #b509ac !default;
+$purple-color: #00369f !default; // navy
 $light-purple-color: lighten($purple-color, 25%);
-$pink-color: #f92080 !default;
-$pink-color-light: #ffdddd !default;
+$pink-color: #00369f !default; // navy (override)
+$pink-color-light: #dbe6ff !default;
 $yellow-color: #efcc00 !default;
 
 $grey-color: #828282 !default;

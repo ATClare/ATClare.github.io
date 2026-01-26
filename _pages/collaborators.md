@@ -8,7 +8,7 @@ description: Collaborators map
 map: true
 ---
 
-<div id="collaborators-map" class="map" style="height: 520px;"></div>
+<div id="collaborators-map" class="map"></div>
 
 {% include collaborators_map.liquid %}
 
