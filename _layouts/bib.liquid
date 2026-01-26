@@ -40,15 +40,7 @@
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {% if thumb_href %}<a href="{{ thumb_href }}" target="_blank" rel="noopener">{% endif %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes="200px"
-            class="preview z-depth-1 rounded"
-            zoomable=false
-            alt=entry.preview
-          %}
+          {% include figure.liquid loading="eager" path=entry_path sizes="200px" class="preview z-depth-1 rounded" zoomable=false alt=entry.preview %}
           {% if thumb_href %}</a>{% endif %}
         {% endif %}
       {% endif %}
