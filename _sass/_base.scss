@@ -1112,6 +1112,13 @@ nav[data-toggle="toc"] {
   width: 100%;
 }
 
+// Leaflet: prevent global responsive-image rules from breaking tile sizing/position.
+// If any upstream CSS sets `img { max-width: 100%; }`, Leaflet tiles get scaled and the map looks "tiled"/offset.
+.leaflet-container img,
+.leaflet-container .leaflet-tile {
+  max-width: none !important;
+}
+
 swiper-container {
   --swiper-navigation-color: var(--global-theme-color);
   --swiper-pagination-color: var(--global-theme-color);
