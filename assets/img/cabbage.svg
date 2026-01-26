@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="g" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#e7f7cf"/>
+      <stop offset="0.55" stop-color="#8ad36d"/>
+      <stop offset="1" stop-color="#2f7b3a"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="55%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#f3ffe0"/>
+      <stop offset="0.7" stop-color="#71c35a"/>
+      <stop offset="1" stop-color="#2f7b3a"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="#ffffff"/>
+  <g transform="translate(400 410)">
+    <circle r="300" fill="url(#g)" stroke="#1f5b2a" stroke-width="12"/>
+    <path d="M-240,-40 C-180,-220 -40,-260 40,-210 C120,-160 210,-110 220,-10 C230,90 150,160 40,170 C-70,180 -200,120 -240,-40 Z" fill="none" stroke="#1f5b2a" stroke-width="18" opacity="0.55"/>
+    <path d="M-220,60 C-180,-30 -120,-90 -10,-110 C100,-130 170,-70 190,30 C210,130 120,210 0,220 C-120,230 -220,160 -220,60 Z" fill="none" stroke="#1f5b2a" stroke-width="14" opacity="0.55"/>
+    <circle r="190" fill="url(#g2)" stroke="#1f5b2a" stroke-width="10" opacity="0.95"/>
+    <path d="M-140,-10 C-120,-80 -40,-110 20,-90 C80,-70 120,-20 120,40 C120,100 70,140 10,145 C-60,150 -150,90 -140,-10 Z" fill="none" stroke="#1f5b2a" stroke-width="12" opacity="0.6"/>
+    <circle r="90" fill="#b8ee87" stroke="#1f5b2a" stroke-width="8" opacity="0.95"/>
+  </g>
+  <text x="400" y="760" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="22" fill="#4b5563">cabbage</text>
+</svg>

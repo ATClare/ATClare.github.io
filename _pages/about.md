@@ -6,7 +6,7 @@ subtitle: <a href='https://www.ubc.ca/'>University of British Columbia</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: cabbage.svg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>CEME 2203</p>
