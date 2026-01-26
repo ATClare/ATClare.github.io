@@ -26,19 +26,30 @@
         {% endif %}
       {% endif %}
       {% if entry.preview %}
+        {%- assign thumb_href = nil -%}
+        {%- if entry.doi -%}
+          {%- assign thumb_href = entry.doi | prepend: 'https://doi.org/' -%}
+        {%- elsif entry.url -%}
+          {%- assign thumb_href = entry.url -%}
+        {%- endif -%}
+
         {% if entry.preview contains '://' %}
+          {% if thumb_href %}<a href="{{ thumb_href }}" target="_blank" rel="noopener">{% endif %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          {% if thumb_href %}</a>{% endif %}
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+          {% if thumb_href %}<a href="{{ thumb_href }}" target="_blank" rel="noopener">{% endif %}
           {%
             include figure.liquid
             loading="eager"
             path=entry_path
             sizes = "200px"
             class="preview z-depth-1 rounded"
-            zoomable=true
+            zoomable=false
             alt=entry.preview
           %}
+          {% if thumb_href %}</a>{% endif %}
         {% endif %}
       {% endif %}
     </div>
