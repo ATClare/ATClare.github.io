@@ -9,10 +9,6 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-<p class="text-muted">
-  Tip: each paper entry supports optional links (DOI, PDF, code) and a small thumbnail (graphical abstract) via the <code>preview</code> field.
-</p>
-
 <div class="publications">
-  {% bibliography %}
+  {% bibliography --sort_by year --order descending %}
 </div>
