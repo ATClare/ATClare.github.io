@@ -32,10 +32,24 @@
       marker.on('mouseout', () => marker.closePopup());
     });
 
-    if (bounds.length) {
-      map.fitBounds(bounds, { padding: [30, 30] });
-    } else {
-      map.setView([20, 0], 2);
-    }
+    const setViewSafe = () => {
+      // Leaflet often needs an explicit invalidateSize after layout/fonts settle,
+      // otherwise tiles can render offset / duplicated.
+      map.invalidateSize(true);
+      if (bounds.length) {
+        map.fitBounds(bounds, { padding: [30, 30] });
+      } else {
+        map.setView([20, 0], 2);
+      }
+    };
+
+    // Run once now, then again after a couple of frames.
+    setViewSafe();
+    requestAnimationFrame(() => requestAnimationFrame(setViewSafe));
+
+    // Also fix up after window resizes (e.g., mobile rotation, font load reflow)
+    window.addEventListener('resize', () => {
+      setTimeout(setViewSafe, 150);
+    });
   });
 </script>
