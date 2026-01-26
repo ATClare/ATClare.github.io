@@ -16,7 +16,7 @@ profile:
 news: false # hide news feed on homepage (minimal)
 selected_papers: false # hide selected papers block on homepage (minimal)
 social: true # includes social icons at the bottom of the page
-projects: true # show projects section on homepage
+projects: false # do not show projects section on homepage
 ---
 
 I’m a Professor at the University of British Columbia (Canada). My research focuses on manufacturing processes and technologies, with particular interests in additive manufacturing and materials processing.
