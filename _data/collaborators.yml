@@ -16,9 +16,13 @@
 
 - name: Christopher Tuck
   institution: Professor, University of Nottingham
+  lat: 52.9548
+  lng: -1.1581
 
 - name: D Graham McCartney
   institution: Emeritus Professor of Materials Processing, University of Nottingham
+  lat: 52.9548
+  lng: -1.1581
 
 - name: Don Pieris
   institution: Research Associate
@@ -30,9 +34,13 @@
 
 - name: John Christopher Walker
   institution: University of Southampton (UK)
+  lat: 50.9097
+  lng: -1.4044
 
 - name: Jonathon Mitchell-Smith
   institution: Texture Jet Ltd.
+  lat: 52.9548
+  lng: -1.1581
 
 - name: Marco Simonelli
   institution: Politecnico di Milano
@@ -53,6 +61,8 @@
 
 - name: Paul Chalker
   institution: Professor of Materials, University of Liverpool
+  lat: 53.4066
+  lng: -2.9663
 
 - name: Paul Dryburgh
   institution: King's College London
@@ -72,6 +82,8 @@
 
 - name: Richard Hague
   institution: Professor, University of Nottingham - Additive Manufacturing
+  lat: 52.9548
+  lng: -1.1581
 
 - name: Richard Leach
   institution: University of Nottingham
@@ -85,12 +97,18 @@
 
 - name: Salomé Sanchez
   institution: Assistant Professor, Universiteit Twente
+  lat: 52.2215
+  lng: 6.8937
 
 - name: samer algodi
   institution: PhD, Department of Mechanical Engineering, College of Engineering, Al-Nahrain University
+  lat: 33.2778
+  lng: 44.3755
 
 - name: Stefano Laureti
   institution: Assistant Professor (Tenure Track - RTT), University of Calabria , DIMES
+  lat: 39.3609
+  lng: 16.2269
 
 - name: Steven Freear
   institution: University of Leeds
@@ -110,6 +128,8 @@
 
 - name: Wessel W. Wits
   institution: R&D Metal Additive Manufacturing (Royal NLR) & Fellow (University of Twente)
+  lat: 52.2215
+  lng: 6.8937
 
 - name: Zhengkai XU
   institution: Singapore Institute of Manufacturing Technology
