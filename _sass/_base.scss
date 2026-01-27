@@ -1195,6 +1195,41 @@ nav[data-toggle="toc"] {
   border-top: 1px solid var(--global-divider-color);
 }
 
+.pub-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.pub-filter-label {
+  font-weight: 700;
+  margin: 0;
+}
+
+.pub-filter {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 0.35rem 0.55rem;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+}
+
+.pub-filter-btn {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 0.35rem 0.65rem;
+  background: rgba(0, 54, 159, 0.06);
+  color: var(--global-text-color);
+  font-weight: 700;
+}
+
 .wordcloud-title {
   margin: 0 0 0.25rem;
 }

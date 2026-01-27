@@ -60,4 +60,17 @@ Current themes:
 - Additive manufacturing
 - Materials engineering and processing
 
+<hr>
+
+<div class="featured">
+  <h2>Featured</h2>
+  <ul>
+    <li><strong>Publications:</strong> <a href="/publications/">Selected + full list</a></li>
+    <li><strong>Collaborations:</strong> <a href="/collaborators/">Friends & collaborators map</a></li>
+    <li><strong>Contact:</strong> <a href="mailto:Adam.clare@ubc.ca">Adam.clare@ubc.ca</a></li>
+  </ul>
+</div>
+
 {% include wordcloud.liquid %}
+
+<p><strong>Work with me:</strong> If you’re interested in manufacturing process innovation, additive manufacturing, or materials processing collaborations, please email me.</p>
