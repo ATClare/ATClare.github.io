@@ -1,7 +1,31 @@
+- name: Adam Thompson
+  institution: Member of Parliament for Erewash
+
+- name: Ajit Panesar
+  institution: Imperial College London
+
 - name: Alistair Speidel
   institution: University of Nottingham
   lat: 52.9387428
   lng: -1.2002957
+
+- name: Allison M. Beese
+  institution: Pennsylvania State University
+
+- name: Andrea Colombi
+  institution: Research fellow ETH Zurich
+
+- name: Andrew H Cannon
+  institution: 1900 Engineering
+
+- name: Andrew R Kennedy
+  institution: Lancaster University
+
+- name: Aydin Nassehi
+  institution: School of Electrical, Electronic and Mechanical Engineering
+
+- name: Boris Brkic
+  institution: BioSense Institute | University of Novi Sad
 
 - name: Bosco Yu
   institution: University of Victoria
@@ -24,8 +48,20 @@
   lat: 52.9548
   lng: -1.1581
 
+- name: Daniel Colquitt
+  institution: University of Liverpool
+
+- name: David Rosen
+  institution: Professor of Mechanical Engineering, Georgia Institute of Technology
+
+- name: Davide Lo Presti
+  institution: Associate Professor @ University of Palermo (IT)
+
 - name: Don Pieris
   institution: Research Associate
+
+- name: Ian Maskery
+  institution: University of Nottingham
 
 - name: James W Murray
   institution: University of Nottingham
@@ -42,17 +78,35 @@
   lat: 52.9548
   lng: -1.1581
 
+- name: Julian Allwood
+  institution: Professor of Engineering and the Environment, University of Cambridge
+
+- name: Kamaal S. Al-hamdani
+  institution: PhD
+
+- name: Kristian Groom
+  institution: Senior Lecturer, The University of Sheffield
+
 - name: Marco Simonelli
   institution: Politecnico di Milano
   lat: 45.4642
   lng: 9.19
   photo: assets/img/collaborators/marco_simonelli.jpg
 
+- name: Masanori Kunieda
+  institution: The University of Tokyo
+
 - name: Matt Clark
   institution: University of Nottingham
   lat: 52.9548
   lng: -1.1581
   photo: assets/img/collaborators/matt_clark.jpg
+
+- name: Mengyan Nie
+  institution: Institute for Materials Discovery, University College London
+
+- name: Michael W Fay
+  institution: University of Nottingham
 
 - name: Nesma T. Aboulkhair
   institution: University of Nottingham (UK)
@@ -69,6 +123,9 @@
   lat: 51.5030855
   lng: -0.0900021
 
+- name: Pete Crawforth
+  institution: Professor of machining, University of Sheffeild AMRC
+
 - name: Peter Kinnell
   institution: Loughborough University
   lat: 52.763845
@@ -77,18 +134,36 @@
 - name: PK Farayibi
   institution: Glenair
 
+- name: Prof. IM Hutchings
+  institution: University of Cambridge
+
+- name: Professor Ruth Goodridge
+  institution: University of Nottingham
+
 - name: Rachid Msaoubi
   institution: Seco Tools AB
+
+- name: Rajkumar Roy
+  institution: City, University of London
+
+- name: Richard Craster
+  institution: Professor of Mathematics, Imperial College
 
 - name: Richard Hague
   institution: Professor, University of Nottingham - Additive Manufacturing
   lat: 52.9548
   lng: -1.1581
 
+- name: Richard J Smith
+  institution: University of Nottingham
+
 - name: Richard Leach
   institution: University of Nottingham
   lat: 52.9387428
   lng: -1.2002957
+
+- name: Ricky Wildman
+  institution: University of Nottingham
 
 - name: Rikesh Patel
   institution: University of Nottingham
@@ -105,10 +180,16 @@
   lat: 33.2778
   lng: 44.3755
 
+- name: Sarah Everton
+  institution: University of Nottingham
+
 - name: Stefano Laureti
   institution: Assistant Professor (Tenure Track - RTT), University of Calabria , DIMES
   lat: 39.3609
   lng: 16.2269
+
+- name: Stephen Taylor
+  institution: Professor
 
 - name: Steven Freear
   institution: University of Leeds
@@ -119,6 +200,12 @@
   institution: Federal University of Technology Akure
   lat: 7.3045349
   lng: 5.1294793
+
+- name: Tanvir Hussain
+  institution: EPSRC Research Fellow, Professor of Coatings and Surface Engineering
+
+- name: Wenqi Li
+  institution: Optics &amp; Photonics Group, University of Nottingham
 
 - name: Wes Witts
   institution: University of Twente / NLR

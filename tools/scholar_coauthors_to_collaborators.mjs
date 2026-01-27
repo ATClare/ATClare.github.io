@@ -3,34 +3,43 @@ import path from "path";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-// Top-25 from Adam Clare's Scholar "Co-authors" dialog (2026-01-26), in order.
-const COAUTHORS = [
-  { name: "James W Murray", user: "tCXWRUUAAAAJ" },
-  { name: "Alistair Speidel", user: "Ce1yK98AAAAJ" },
-  { name: "Jonathon Mitchell-Smith", user: "4sUat1QAAAAJ" },
-  { name: "Christopher Tuck", user: "9B8LbxIAAAAJ" },
-  { name: "Richard Leach", user: "ZAfAKAkAAAAJ" },
-  { name: "D Graham McCartney", user: "irR0UtIAAAAJ" },
-  { name: "Taiwo Ebenezer Abioye", user: "RO_0Qp8AAAAJ" },
-  { name: "Christopher J. Hyde", user: "FBh_xTIAAAAJ" },
-  { name: "PK Farayibi", user: "ZKL3zLQAAAAJ" },
-  { name: "Rikesh Patel", user: "eDzvB5UAAAAJ" },
-  { name: "Nesma T. Aboulkhair", user: "jHvg-9UAAAAJ" },
-  { name: "Marco Simonelli", user: "1jSCRLYAAAAJ" },
-  { name: "Paul Dryburgh", user: "zNKT7iQAAAAJ" },
-  { name: "Don Pieris", user: "3ojfUIYAAAAJ" },
-  { name: "Richard Hague", user: "E78iDZoAAAAJ" },
-  { name: "Zhengkai XU", user: "SQ6lB5EAAAAJ" },
-  { name: "Stefano Laureti", user: "SMCZKBIAAAAJ" },
-  { name: "Steven Freear", user: "CLiBBDEAAAAJ" },
-  { name: "Rachid Msaoubi", user: "uKXx4LsAAAAJ" },
-  { name: "John Christopher Walker", user: "3LmzzxEAAAAJ" },
-  { name: "Paul Chalker", user: "ulJVvz4AAAAJ" },
-  { name: "Wessel W. Wits", user: "SiqaoPMAAAAJ" },
-  { name: "samer algodi", user: "rRMaKIkAAAAJ" },
-  { name: "Salomé Sanchez", user: "bF1QTuIAAAAJ" },
-  { name: "Peter Kinnell", user: "RyqgO2kAAAAJ" },
-];
+const SCHOLAR_USER = process.env.SCHOLAR_USER || "1foiT-oAAAAJ";
+const TOP_N = Number(process.env.TOP_N || "25");
+const ENABLE_GEOCODE = process.env.GEOCODE === "1";
+
+async function fetchCoauthorsList() {
+  // Public "View all" co-authors page.
+  // Note: Scholar does not expose a guaranteed coauthorship-frequency ranking here.
+  const url = `https://scholar.google.ca/citations?view_op=list_colleagues&hl=en&user=${encodeURIComponent(SCHOLAR_USER)}`;
+  const html = await fetchText(url);
+
+  // Parse each coauthor block by looking for the name anchor + nearby affiliation.
+  // Example:
+  // <h3 class="gs_ai_name"><a href="/citations?hl=en&amp;user=...">Name</a></h3>
+  // <div class="gs_ai_aff">Affiliation</div>
+  const re =
+    /<h3 class="gs_ai_name"><a href="\/citations\?hl=en&amp;user=([^&"]+)"[^>]*>([^<]+)<\/a><\/h3>(?:\s*<div class="gs_ai_aff">([^<]*)<\/div>)?/g;
+  const items = [];
+  let m;
+  while ((m = re.exec(html))) {
+    const user = m[1];
+    const name = (m[2] || "").trim();
+    const institution = (m[3] || "").trim() || null;
+    if (!name || !user) continue;
+    items.push({ name, user, institution });
+  }
+
+  // de-dupe by user
+  const seen = new Set();
+  const uniq = [];
+  for (const it of items) {
+    if (seen.has(it.user)) continue;
+    seen.add(it.user);
+    uniq.push(it);
+  }
+
+  return uniq.slice(0, TOP_N);
+}
 
 function extractAffiliation(html) {
   // Scholar profile renders affiliation in div.gsc_prf_il (first one usually affiliation)
@@ -141,25 +150,20 @@ async function main() {
 
   const additions = [];
 
-  for (let i = 0; i < COAUTHORS.length; i++) {
-    const c = COAUTHORS[i];
+  const coauthors = await fetchCoauthorsList();
+  console.log(`Fetched ${coauthors.length} co-authors from Scholar (requested TOP_N=${TOP_N}).`);
+
+  for (let i = 0; i < coauthors.length; i++) {
+    const c = coauthors[i];
     const key = c.name.toLowerCase();
     if (existingByName.has(key)) continue;
 
-    console.log(`[${i + 1}/${COAUTHORS.length}] ${c.name}`);
+    console.log(`[${i + 1}/${coauthors.length}] ${c.name}`);
 
-    const profileUrl = `https://scholar.google.ca/citations?hl=en&user=${c.user}`;
-    let affiliation = null;
-    try {
-      const html = await fetchText(profileUrl);
-      affiliation = extractAffiliation(html);
-    } catch (e) {
-      affiliation = null;
-      console.log(`  - profile fetch failed (${String(e?.name || e)})`);
-    }
+    const affiliation = c.institution || null;
 
     let geo = null;
-    if (affiliation) {
+    if (ENABLE_GEOCODE && affiliation) {
       try {
         geo = await geocode(affiliation);
       } catch (e) {
@@ -178,8 +182,7 @@ async function main() {
       // no photo for scraped entries
     });
 
-    // Short delay to be polite to Scholar
-    await sleep(300);
+    await sleep(120);
   }
 
   const merged = [...existing, ...additions].sort((a, b) => a.name.localeCompare(b.name));
