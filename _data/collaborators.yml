@@ -1,14 +1,7 @@
-- name: Matt Clark
+- name: Alistair Speidel
   institution: University of Nottingham
-  lat: 52.9548
-  lng: -1.1581
-  photo: assets/img/collaborators/matt_clark.jpg
-
-- name: Marco Simonelli
-  institution: Politecnico di Milano
-  lat: 45.4642
-  lng: 9.19
-  photo: assets/img/collaborators/marco_simonelli.jpg
+  lat: 52.9387428
+  lng: -1.2002957
 
 - name: Bosco Yu
   institution: University of Victoria
@@ -16,8 +9,109 @@
   lng: -123.3117
   photo: assets/img/collaborators/bosco_yu.jpg
 
+- name: Christopher J. Hyde
+  institution: University of Nottingham
+  lat: 52.9387428
+  lng: -1.2002957
+
+- name: Christopher Tuck
+  institution: Professor, University of Nottingham
+
+- name: D Graham McCartney
+  institution: Emeritus Professor of Materials Processing, University of Nottingham
+
+- name: Don Pieris
+  institution: Research Associate
+
+- name: James W Murray
+  institution: University of Nottingham
+  lat: 52.9387428
+  lng: -1.2002957
+
+- name: John Christopher Walker
+  institution: University of Southampton (UK)
+
+- name: Jonathon Mitchell-Smith
+  institution: Texture Jet Ltd.
+
+- name: Marco Simonelli
+  institution: Politecnico di Milano
+  lat: 45.4642
+  lng: 9.19
+  photo: assets/img/collaborators/marco_simonelli.jpg
+
+- name: Matt Clark
+  institution: University of Nottingham
+  lat: 52.9548
+  lng: -1.1581
+  photo: assets/img/collaborators/matt_clark.jpg
+
+- name: Nesma T. Aboulkhair
+  institution: University of Nottingham (UK)
+  lat: 52.9387428
+  lng: -1.2002957
+
+- name: Paul Chalker
+  institution: Professor of Materials, University of Liverpool
+
+- name: Paul Dryburgh
+  institution: King's College London
+  lat: 51.5030855
+  lng: -0.0900021
+
+- name: Peter Kinnell
+  institution: Loughborough University
+  lat: 52.763845
+  lng: -1.2372582
+
+- name: PK Farayibi
+  institution: Glenair
+
+- name: Rachid Msaoubi
+  institution: Seco Tools AB
+
+- name: Richard Hague
+  institution: Professor, University of Nottingham - Additive Manufacturing
+
+- name: Richard Leach
+  institution: University of Nottingham
+  lat: 52.9387428
+  lng: -1.2002957
+
+- name: Rikesh Patel
+  institution: University of Nottingham
+  lat: 52.9387428
+  lng: -1.2002957
+
+- name: Salomé Sanchez
+  institution: Assistant Professor, Universiteit Twente
+
+- name: samer algodi
+  institution: PhD, Department of Mechanical Engineering, College of Engineering, Al-Nahrain University
+
+- name: Stefano Laureti
+  institution: Assistant Professor (Tenure Track - RTT), University of Calabria , DIMES
+
+- name: Steven Freear
+  institution: University of Leeds
+  lat: 53.8057925
+  lng: -1.555111
+
+- name: Taiwo Ebenezer Abioye
+  institution: Federal University of Technology Akure
+  lat: 7.3045349
+  lng: 5.1294793
+
 - name: Wes Witts
   institution: University of Twente / NLR
   lat: 52.2394
   lng: 6.8522
   photo: assets/img/collaborators/wes_witts.jpg
+
+- name: Wessel W. Wits
+  institution: R&D Metal Additive Manufacturing (Royal NLR) & Fellow (University of Twente)
+
+- name: Zhengkai XU
+  institution: Singapore Institute of Manufacturing Technology
+  lat: 1.2982059
+  lng: 103.7888489
