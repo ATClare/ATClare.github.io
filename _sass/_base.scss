@@ -1120,7 +1120,7 @@ nav[data-toggle="toc"] {
 }
 
 // -----------------------------------------------------------------------------
-// Homepage hero + proof strip
+// Homepage hero + proof strip + word cloud
 // -----------------------------------------------------------------------------
 
 .hero {
@@ -1187,6 +1187,45 @@ nav[data-toggle="toc"] {
   .proof-strip {
     grid-template-columns: 1fr;
   }
+}
+
+.wordcloud-section {
+  margin: 2rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.wordcloud-title {
+  margin: 0 0 0.25rem;
+}
+
+.wordcloud-subtitle {
+  margin: 0 0 0.75rem;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+}
+
+.wordcloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.65rem;
+  align-items: baseline;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--global-divider-color);
+  background: rgba(0, 54, 159, 0.03);
+}
+
+.wc-word {
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--global-text-color);
+  opacity: 0.92;
+}
+
+.wc-word:hover {
+  color: var(--global-theme-color);
+  opacity: 1;
 }
 
 swiper-container {
