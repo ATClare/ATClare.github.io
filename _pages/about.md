@@ -21,6 +21,7 @@ projects: false
 ---
 
 <div class="hero">
+  <h1 class="mb-2">Hello Lauren</h1>
   <p class="hero-tagline">
     We develop manufacturing processes for high-performance components — spanning additive manufacturing, materials processing, and process innovation.
   </p>
