@@ -1,76 +1,124 @@
 ---
 layout: about
-title: About
+title: Lab
 permalink: /
 subtitle: <a href='https://www.ubc.ca/'>University of British Columbia</a>
 
+# Keep the sidebar minimal; this site will be lab-first.
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: lab/placeholder-tile.svg
+  image_circular: false
   more_info: >
-    <p>CEME 2203</p>
-    <p>Mechanical Engineering</p>
-    <p>Vancouver, British Columbia</p>
+    <p><strong>Clare Lab</strong></p>
+    <p>Manufacturing Engineering</p>
+    <p>Vancouver, BC</p>
 
-news: false # hide news feed on homepage (minimal)
-selected_papers: false # hide selected papers block on homepage (minimal)
-social: true # includes social icons at the bottom of the page
-projects: false # do not show projects section on homepage
+news: false
+selected_papers: false
+social: true
+projects: false
 ---
 
 <div class="hero">
   <p class="hero-tagline">
-    Professor at the University of British Columbia working on manufacturing processes and technologies — with a focus on additive manufacturing and materials processing.
+    We develop manufacturing processes for high-performance components — spanning additive manufacturing, materials processing, and process innovation.
   </p>
 
   <div class="hero-pills">
-    <span class="pill">Manufacturing</span>
     <span class="pill">Additive manufacturing</span>
+    <span class="pill">Process development</span>
     <span class="pill">Materials processing</span>
-  </div>
-
-  <div class="proof-strip">
-    <div class="proof-item">
-      <div class="proof-value">20+ yrs</div>
-      <div class="proof-label">Research across academia & industry</div>
-    </div>
-    <div class="proof-item">
-      <div class="proof-value">Editor-in-Chief</div>
-      <div class="proof-label">
-        <a href="https://www.sciencedirect.com/journal/additive-manufacturing">Additive Manufacturing</a>
-      </div>
-    </div>
-    <div class="proof-item">
-      <div class="proof-value">Publications</div>
-      <div class="proof-label"><a href="/publications/">See full list</a></div>
-    </div>
-    <div class="proof-item">
-      <div class="proof-value">Patents</div>
-      <div class="proof-label"><a href="/cv/">See CV</a></div>
-    </div>
+    <span class="pill">Design-for-manufacture</span>
   </div>
 </div>
 
-I also maintain active collaborations with colleagues in academia and industry.
-
-Current themes:
-
-- Manufacturing technology & process development
-- Additive manufacturing
-- Materials engineering and processing
+<div class="mt-4">
+  {% include figure.liquid loading="lazy" path="assets/img/lab/abb-robot.jpg" class="img-fluid rounded z-depth-1" alt="ABB industrial robot arm" %}
+</div>
 
 <hr>
 
-<div class="featured">
-  <h2>Featured</h2>
-  <ul>
-    <li><strong>Publications:</strong> <a href="/publications/">Selected + full list</a></li>
-    <li><strong>Collaborations:</strong> <a href="/collaborators/">Friends & collaborators map</a></li>
-    <li><strong>Contact:</strong> <a href="mailto:Adam.clare@ubc.ca">Adam.clare@ubc.ca</a></li>
-  </ul>
+<div class="row g-3 mt-1">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-img">
+        {% include figure.liquid loading="lazy" path="assets/img/lab/placeholder-tile.svg" class="img-fluid rounded z-depth-1" alt="Research" %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Research</h3>
+        <p class="card-text">Core themes, capabilities, and current directions.</p>
+        <a class="btn btn-primary" href="/projects/">Explore</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-img">
+        {% include figure.liquid loading="lazy" path="assets/img/lab/placeholder-tile.svg" class="img-fluid rounded z-depth-1" alt="People" %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">People</h3>
+        <p class="card-text">Students, staff, collaborators, and alumni.</p>
+        <a class="btn btn-primary" href="/group/">Meet the team</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-img">
+        {% include figure.liquid loading="lazy" path="assets/img/lab/placeholder-tile.svg" class="img-fluid rounded z-depth-1" alt="Publications" %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Publications</h3>
+        <p class="card-text">Papers, talks, and related outputs.</p>
+        <a class="btn btn-primary" href="/publications/">Browse</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-img">
+        {% include figure.liquid loading="lazy" path="assets/img/lab/placeholder-tile.svg" class="img-fluid rounded z-depth-1" alt="Facilities" %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Facilities</h3>
+        <p class="card-text">Equipment, labs, and experimental capabilities.</p>
+        <a class="btn btn-primary" href="/projects/">See capabilities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-img">
+        {% include figure.liquid loading="lazy" path="assets/img/lab/placeholder-tile.svg" class="img-fluid rounded z-depth-1" alt="Join" %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Join</h3>
+        <p class="card-text">Open positions and how to apply.</p>
+        <a class="btn btn-primary" href="/group/">Opportunities</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-img">
+        {% include figure.liquid loading="lazy" path="assets/img/lab/placeholder-tile.svg" class="img-fluid rounded z-depth-1" alt="Contact" %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Contact</h3>
+        <p class="card-text">Get in touch for collaborations, visits, and student inquiries.</p>
+        <a class="btn btn-primary" href="mailto:Adam.clare@ubc.ca">Email</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-{% include wordcloud.liquid %}
-
-<p><strong>Work with me:</strong> If you’re interested in manufacturing process innovation, additive manufacturing, or materials processing collaborations, please email me.</p>
+<p class="mt-4">
+  <strong>Media placeholders:</strong> replace the images in <code>assets/img/lab/</code> with lab photos, machines, microstructures, or process imagery.
+</p>

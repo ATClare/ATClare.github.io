@@ -38,6 +38,8 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
 
   &:hover {
     color: var(--global-theme-color);
@@ -168,19 +170,35 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 
   .card-img {
     width: 100%;
-    padding-top: 1.25rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .card-title {
     color: var(--global-text-color);
+    margin-bottom: 0.4rem;
+  }
+
+  .card-text {
+    color: var(--global-text-color-light);
   }
 
   .card-body {
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: 1rem 1rem 1.1rem 1rem;
   }
+}
+
+.btn.btn-primary {
+  border-radius: 999px;
+  padding: 0.5rem 0.95rem;
+  font-weight: 600;
 }
 
 // Citation
