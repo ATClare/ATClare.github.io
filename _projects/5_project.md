@@ -37,4 +37,13 @@ Work in this area includes publications with **Bisterov**, **Speidel**, and **Mi
 
 ## Images from papers
 
-If you send me 3–6 figures (or page screenshots) you want used here—ideally as **PNG/JPG**—I’ll add them as a small gallery with short captions and link each image back to its paper.
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/ejp/electrolyte-jet-topography.jpg" title="Electrolyte Jet Topography: workflow from acquisition to microstructure" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Electrolyte Jet Topography: from measurement and data processing through to phase identification and microstructure reconstruction.
+</div>
+
+Send me any additional figures you want included and (optionally) which paper each figure is from, and I’ll extend this into a small annotated gallery.
