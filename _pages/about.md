@@ -7,7 +7,7 @@ subtitle: <a href='https://www.ubc.ca/'>University of British Columbia</a>
 # Keep the sidebar minimal; this site will be lab-first.
 profile:
   align: right
-  image: lab/placeholder-tile.svg
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p><strong>Clare Lab</strong></p>
@@ -21,7 +21,6 @@ projects: false
 ---
 
 <div class="hero">
-  <h1 class="mb-2">Hello Lauren</h1>
   <p class="hero-tagline">
     We develop manufacturing processes for high-performance components — spanning additive manufacturing, materials processing, and process innovation.
   </p>
@@ -32,10 +31,6 @@ projects: false
     <span class="pill">Materials processing</span>
     <span class="pill">Design-for-manufacture</span>
   </div>
-</div>
-
-<div class="mt-4">
-  {% include figure.liquid loading="lazy" path="assets/img/lab/abb-robot.jpg" class="img-fluid rounded z-depth-1" alt="ABB industrial robot arm" %}
 </div>
 
 <hr>
