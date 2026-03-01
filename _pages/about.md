@@ -22,19 +22,12 @@ projects: false
 
 <div class="hero">
   <div class="hero-gears" aria-hidden="true">
-    <svg viewBox="0 0 120 120" width="100%" height="100%" role="img" focusable="false">
-      <!-- Simple stylized gears (SVG + CSS rotation). Keeps it lightweight; no external GIF needed. -->
-      <g class="gear" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="45" cy="60" r="18" />
-        <circle cx="45" cy="60" r="6" />
-        <path d="M45 36v-10M45 94v-10M69 60h10M21 60h10M60 43l7-7M30 77l-7 7M60 77l7 7M30 43l-7-7" />
-      </g>
-      <g class="gear gear--reverse" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(35,10)">
-        <circle cx="55" cy="55" r="14" />
-        <circle cx="55" cy="55" r="5" />
-        <path d="M55 36v-8M55 82v-8M74 55h8M28 55h8M66 43l6-6M44 67l-6 6M66 67l6 6M44 43l-6-6" />
-      </g>
-    </svg>
+    <img
+      src="/assets/img/decor/gears-blue.gif"
+      alt=""
+      loading="lazy"
+      decoding="async"
+    >
   </div>
 
   <p class="hero-tagline">
