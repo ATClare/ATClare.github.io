@@ -74,7 +74,7 @@ projects: false
   <div class="col-md-4">
     <div class="card h-100">
       <div class="card-img">
-        {% include figure.liquid loading="lazy" path="assets/img/lab/placeholder-tile.svg" class="img-fluid rounded z-depth-1" alt="Publications" %}
+        {% include figure.liquid loading="lazy" path="assets/img/lab/publications-tile.jpg" class="img-fluid rounded z-depth-1" alt="Publications" %}
       </div>
       <div class="card-body">
         <h3 class="card-title">Publications</h3>
