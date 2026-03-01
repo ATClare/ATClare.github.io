@@ -46,4 +46,28 @@ Work in this area includes publications with **Bisterov**, **Speidel**, and **Mi
   Electrolyte Jet Topography: from measurement and data processing through to phase identification and microstructure reconstruction.
 </div>
 
-Send me any additional figures you want included and (optionally) which paper each figure is from, and I’ll extend this into a small annotated gallery.
+<div class="row">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/ejp/ejm-system-schematic.jpg" title="Electrolyte jet processing system overview" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/ejp/ejm-apparatus-process.jpg" title="EJM apparatus and process schematic" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Representative schematics: system-level architecture and the local jet / current-density picture that underpins feature formation.
+</div>
+
+<div class="row">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/ejp/electrolyte-jet-analytics.jpg" title="Electrochemical jet analytics / mapping" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/ejp/nozzle-zone-schematic.jpg" title="Nozzle + machining-zone schematic" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Measurement and mapping concepts alongside nozzle / machining-zone schematics used to reason about controllability and outcomes.
+</div>
+
+If you tell me which figure belongs to which paper (Bisterov / Speidel / Mitchell‑Smith), I’ll add “Related paper” links under each image.
