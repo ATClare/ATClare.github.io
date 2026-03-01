@@ -1142,7 +1142,41 @@ nav[data-toggle="toc"] {
 // -----------------------------------------------------------------------------
 
 .hero {
+  position: relative;
   margin: 0 0 1.25rem;
+}
+
+.hero-gears {
+  position: absolute;
+  top: -0.25rem;
+  right: 0;
+  width: 72px;
+  height: 72px;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.hero-gears .gear {
+  transform-origin: 50% 50%;
+  animation: hero-gear-spin 6s linear infinite;
+}
+
+.hero-gears .gear.gear--reverse {
+  animation-direction: reverse;
+  animation-duration: 8s;
+}
+
+@keyframes hero-gear-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (max-width: 576px) {
+  .hero-gears {
+    width: 56px;
+    height: 56px;
+    top: -0.15rem;
+  }
 }
 
 .hero-tagline {
