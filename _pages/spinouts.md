@@ -28,11 +28,14 @@ A small selection of companies connected to the lab’s research, technology tra
   <div class="col-md-6 mt-3">
     <div class="card h-100">
       <div class="card-body">
-        <h3 class="card-title">Scintam</h3>
+        <div class="mb-3">
+          {% include figure.liquid loading="lazy" path="assets/img/spinouts/scintam.jpg" class="img-fluid" alt="Scintam Engineering logo" %}
+        </div>
+        <h3 class="card-title">Scintam Engineering</h3>
         <p class="card-text">
-          Spinout activity connected to process monitoring, sensing, and data-driven manufacturing.
+          Translating research in manufacturing process measurement and analysis into industrial tools and services.
         </p>
-        <p class="card-text"><em>Logo and link pending — send me Scintam’s website (or the logo file) and I’ll add it.</em></p>
+        <p class="card-text"><em>If you send me Scintam’s website URL, I’ll link it here.</em></p>
       </div>
     </div>
   </div>
