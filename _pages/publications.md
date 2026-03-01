@@ -3,6 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description: Publications (reverse chronological order).
+img: assets/img/lab/publications-hero.jpg
 nav: true
 nav_order: 2
 ---
