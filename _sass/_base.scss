@@ -1148,22 +1148,30 @@ nav[data-toggle="toc"] {
 
 .hero-gears {
   position: absolute;
-  top: -0.25rem;
-  right: 0;
-  width: 72px;
-  height: 72px;
-  opacity: 0.85;
+  top: -0.75rem;
+  right: -0.5rem;
+  width: 140px;
+  height: 140px;
+  opacity: 0.18;
+  color: rgba(120, 130, 140, 1); /* gear stroke color via currentColor */
   pointer-events: none;
+  z-index: 0; /* behind hero text */
+}
+
+/* keep hero content above the background gears */
+.hero > *:not(.hero-gears) {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-gears .gear {
   transform-origin: 50% 50%;
-  animation: hero-gear-spin 6s linear infinite;
+  animation: hero-gear-spin 22s linear infinite;
 }
 
 .hero-gears .gear.gear--reverse {
   animation-direction: reverse;
-  animation-duration: 8s;
+  animation-duration: 30s;
 }
 
 @keyframes hero-gear-spin {
@@ -1173,9 +1181,16 @@ nav[data-toggle="toc"] {
 
 @media (max-width: 576px) {
   .hero-gears {
-    width: 56px;
-    height: 56px;
-    top: -0.15rem;
+    width: 110px;
+    height: 110px;
+    top: -0.5rem;
+    right: -0.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-gears .gear {
+    animation: none;
   }
 }
 
