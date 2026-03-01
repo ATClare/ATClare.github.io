@@ -1148,13 +1148,14 @@ nav[data-toggle="toc"] {
 
 .hero-gears {
   position: absolute;
-  top: -1.0rem;
-  right: -0.75rem;
-  width: 190px;
-  height: 190px;
-  opacity: 0.16;
+  top: -0.5rem;
+  right: -0.5rem;
+  width: 260px;
+  height: 200px;
+  opacity: 0.28;
   pointer-events: none;
   z-index: 0; /* behind hero text */
+  mix-blend-mode: multiply;
 }
 
 .hero-gears img {
@@ -1162,7 +1163,7 @@ nav[data-toggle="toc"] {
   height: 100%;
   object-fit: contain;
   display: block;
-  filter: grayscale(100%);
+  filter: grayscale(100%) contrast(1.05);
 }
 
 /* keep hero content above the background gears */
@@ -1174,10 +1175,11 @@ nav[data-toggle="toc"] {
 
 @media (max-width: 576px) {
   .hero-gears {
-    width: 150px;
-    height: 150px;
-    top: -0.75rem;
-    right: -0.5rem;
+    width: 200px;
+    height: 160px;
+    top: -0.4rem;
+    right: -0.35rem;
+    opacity: 0.22;
   }
 }
 
