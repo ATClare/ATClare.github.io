@@ -23,6 +23,7 @@ projects: false
 <div class="hero">
   <p class="hero-tagline">
     We develop manufacturing processes for high-performance components — spanning additive manufacturing, materials processing, and process innovation.
+<!-- deploy: trigger rebuild -->
   </p>
 
   <div class="hero-cloud" aria-label="Keywords">
