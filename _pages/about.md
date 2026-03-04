@@ -20,8 +20,6 @@ social: true
 projects: false
 ---
 
-<div class="welcome-bg">
-
 <div class="hero">
   <p class="hero-tagline">
     We develop manufacturing processes for high-performance components — spanning additive manufacturing, materials processing, and process innovation.
@@ -55,5 +53,3 @@ We work on **manufacturing process development** for high-performance components
 - **Group & opportunities:** /group/
 - **Spinouts:** /spinouts/
 - **Contact:** Adam.clare@ubc.ca
-
-</div>
