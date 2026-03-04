@@ -1143,31 +1143,51 @@ nav[data-toggle="toc"] {
 
 /* Subtle animated background for the welcome page */
 body.welcome-page {
-  /* keep the normal solid background, but add drifting gradients over it */
+  /* Keep the normal solid background, then overlay an animated gradient layer. */
+  position: relative;
   background-color: var(--global-bg-color);
-  background-image:
-    radial-gradient(900px 520px at 15% 10%, rgba(0, 54, 159, 0.18), transparent 58%),
-    radial-gradient(820px 560px at 85% 25%, rgba(120, 130, 140, 0.16), transparent 58%),
-    radial-gradient(980px 660px at 30% 95%, rgba(0, 54, 159, 0.12), transparent 62%);
+}
+
+body.welcome-page::before {
+  content: "";
+  position: fixed;
+  inset: -10vh -10vw; /* overscan so drift doesn’t reveal edges */
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  background:
+    radial-gradient(900px 520px at 15% 10%, rgba(0, 54, 159, 0.38), transparent 60%),
+    radial-gradient(820px 560px at 85% 25%, rgba(120, 130, 140, 0.30), transparent 62%),
+    radial-gradient(980px 660px at 30% 95%, rgba(0, 54, 159, 0.26), transparent 64%);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  animation: welcome-bg-drift 14s ease-in-out infinite;
+  filter: blur(0.2px);
+  transform: translate3d(0, 0, 0) scale(1);
+  animation: welcome-bg-drift 10s ease-in-out infinite;
+}
+
+/* Ensure all page content renders above the animated background layer */
+body.welcome-page > * {
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes welcome-bg-drift {
   0% {
-    background-position: 0% 0%, 100% 0%, 15% 100%;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0.2px) saturate(1);
   }
   50% {
-    background-position: 10% 12%, 86% 16%, 28% 86%;
+    transform: translate3d(18px, -14px, 0) scale(1.02);
+    filter: blur(0.2px) saturate(1.12);
   }
   100% {
-    background-position: 0% 0%, 100% 0%, 15% 100%;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0.2px) saturate(1);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body.welcome-page {
+  body.welcome-page::before {
     animation: none;
   }
 }
