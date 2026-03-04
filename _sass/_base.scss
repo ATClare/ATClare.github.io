@@ -1230,23 +1230,22 @@ body.welcome-page {
   margin: 0 0 0.75rem;
 }
 
-.hero-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.hero-cloud {
+  width: 100%;
+  max-width: 780px;
   margin: 0 0 1rem;
 }
 
-.pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.35rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid var(--global-divider-color);
-  background: rgba(0, 54, 159, 0.06);
-  color: var(--global-text-color);
-  font-size: 0.9rem;
-  font-weight: 600;
+.hero-cloud svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .hero-cloud {
+    max-width: 100%;
+  }
 }
 
 .proof-strip {

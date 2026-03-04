@@ -25,11 +25,25 @@ projects: false
     We develop manufacturing processes for high-performance components — spanning additive manufacturing, materials processing, and process innovation.
   </p>
 
-  <div class="hero-pills">
-    <span class="pill">Additive manufacturing</span>
-    <span class="pill">Process development</span>
-    <span class="pill">Materials processing</span>
-    <span class="pill">Design-for-manufacture</span>
+  <div class="hero-cloud" aria-label="Keywords">
+    <svg viewBox="0 0 900 150" width="100%" height="100%" role="img" aria-label="Keywords word cloud">
+      <rect x="0" y="0" width="900" height="150" rx="18" fill="rgba(0,54,159,0.04)" stroke="rgba(0,0,0,0.08)" />
+
+      <g fill="rgba(0,0,0,0.78)">
+        <text x="60" y="62" font-size="26" font-weight="700">Additive manufacturing</text>
+        <text x="520" y="55" font-size="22" font-weight="650">Process development</text>
+        <text x="380" y="110" font-size="20" font-weight="600">Materials processing</text>
+        <text x="78" y="112" font-size="18" font-weight="650">Design-for-manufacture</text>
+
+        <text x="690" y="112" font-size="16" font-weight="600" opacity="0.85">Surface engineering</text>
+        <text x="600" y="86" font-size="14" font-weight="600" opacity="0.8">Metrology</text>
+        <text x="265" y="86" font-size="14" font-weight="600" opacity="0.8">Qualification</text>
+      </g>
+
+      <!-- subtle accent strokes -->
+      <path d="M24 28h70" stroke="rgba(0,54,159,0.35)" stroke-width="4" stroke-linecap="round" />
+      <path d="M806 122h70" stroke="rgba(0,54,159,0.25)" stroke-width="4" stroke-linecap="round" />
+    </svg>
   </div>
 </div>
 
