@@ -1,8 +1,8 @@
 ---
 layout: about
-title: Lab
+title: Adam Clare
 permalink: /
-subtitle: <a href='https://www.ubc.ca/'>University of British Columbia</a>
+subtitle: <a href='https://www.ubc.ca/'>University of British Columbia</a> · <em>Study with me!</em>
 
 # Keep the sidebar minimal; this site will be lab-first.
 profile:
@@ -10,7 +10,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p><strong>Clare Lab</strong></p>
+    <p><strong>Adam Clare</strong></p>
     <p>Manufacturing Engineering</p>
     <p>Vancouver, BC</p>
 
