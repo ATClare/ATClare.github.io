@@ -31,14 +31,20 @@ projects: false
       <rect x="0" y="0" width="900" height="150" rx="18" fill="rgba(0,54,159,0.04)" stroke="rgba(0,0,0,0.08)" />
 
       <g fill="rgba(0,0,0,0.78)">
-        <text x="60" y="62" font-size="26" font-weight="700">Additive manufacturing</text>
-        <text x="520" y="55" font-size="22" font-weight="650">Process development</text>
-        <text x="380" y="110" font-size="20" font-weight="600">Materials processing</text>
-        <text x="78" y="112" font-size="18" font-weight="650">Design-for-manufacture</text>
+        <text x="68" y="64" font-size="26" font-weight="700">Additive manufacturing</text>
+        <text x="520" y="54" font-size="22" font-weight="650">Process development</text>
+        <text x="390" y="114" font-size="20" font-weight="600">Materials processing</text>
+        <text x="92" y="118" font-size="18" font-weight="650">Design-for-manufacture</text>
 
-        <text x="690" y="112" font-size="16" font-weight="600" opacity="0.85">Surface engineering</text>
-        <text x="600" y="86" font-size="14" font-weight="600" opacity="0.8">Metrology</text>
-        <text x="265" y="86" font-size="14" font-weight="600" opacity="0.8">Qualification</text>
+        <text x="690" y="116" font-size="16" font-weight="600" opacity="0.85">Surface engineering</text>
+
+        <!-- vertical accents -->
+        <text x="40" y="130" font-size="14" font-weight="700" opacity="0.55" transform="rotate(-90 40 130)">Metrology</text>
+        <text x="862" y="128" font-size="14" font-weight="700" opacity="0.45" transform="rotate(90 862 128)">Qualification</text>
+
+        <!-- small supporting terms -->
+        <text x="610" y="88" font-size="14" font-weight="600" opacity="0.75">Surface integrity</text>
+        <text x="268" y="86" font-size="14" font-weight="600" opacity="0.75">Toolpaths</text>
       </g>
 
       <!-- subtle accent strokes -->
