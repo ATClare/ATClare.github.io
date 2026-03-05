@@ -1154,9 +1154,9 @@ body.welcome-page::before {
   inset: -10vh -10vw; /* overscan so drift doesn’t reveal edges */
   pointer-events: none;
   z-index: 0;
-  opacity: 0.28;
+  opacity: 0.30;
 
-  /* Premium subtle: slow drifting “blobs” */
+  /* Layer 1: slow drifting “blobs” + soft shimmer */
   background-image:
     radial-gradient(900px 520px at 15% 10%, rgba(0, 54, 159, 0.28), transparent 62%),
     radial-gradient(820px 560px at 85% 25%, rgba(120, 130, 140, 0.22), transparent 64%),
@@ -1165,20 +1165,34 @@ body.welcome-page::before {
   background-repeat: no-repeat;
   filter: blur(0.2px);
   transform: translate3d(0, 0, 0) scale(1);
-  animation: welcome-bg-drift 42s ease-in-out infinite;
+  animation: welcome-bg-drift 36s ease-in-out infinite;
 }
 
-/* Add very light grain so it feels designed (not flat) */
+/* Layer 2: faint animated pattern (topography-ish lines) */
 body.welcome-page::after {
   content: "";
   position: fixed;
-  inset: 0;
+  inset: -10vh -10vw;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.06;
-  background-image: url("/assets/img/decor/grain.png");
-  background-repeat: repeat;
+
+  /* Pattern: subtle contour lines + grain */
+  background-image:
+    repeating-radial-gradient(
+      circle at 25% 30%,
+      rgba(0, 54, 159, 0.055) 0px,
+      rgba(0, 54, 159, 0.055) 1px,
+      rgba(0, 0, 0, 0) 10px,
+      rgba(0, 0, 0, 0) 18px
+    ),
+    url("/assets/img/decor/grain.png");
+
+  background-repeat: repeat, repeat;
+  background-size: 520px 520px, 256px 256px;
+
+  opacity: 0.10;
   mix-blend-mode: multiply;
+  animation: welcome-pattern-drift 22s linear infinite;
 }
 
 /* Ensure all page content renders above the animated background layer */
@@ -1188,7 +1202,8 @@ body.welcome-page > * {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body.welcome-page::before {
+  body.welcome-page::before,
+  body.welcome-page::after {
     animation: none;
   }
 }
@@ -1196,21 +1211,24 @@ body.welcome-page > * {
 @keyframes welcome-bg-drift {
   0% {
     transform: translate3d(0, 0, 0) scale(1);
-    filter: blur(0.2px) saturate(1);
+    filter: blur(0.2px) saturate(1) brightness(1);
   }
   50% {
     transform: translate3d(18px, -14px, 0) scale(1.02);
-    filter: blur(0.2px) saturate(1.12);
+    filter: blur(0.2px) saturate(1.12) brightness(1.03);
   }
   100% {
     transform: translate3d(0, 0, 0) scale(1);
-    filter: blur(0.2px) saturate(1);
+    filter: blur(0.2px) saturate(1) brightness(1);
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  body.welcome-page::before {
-    animation: none;
+@keyframes welcome-pattern-drift {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 240px -180px, 128px -96px;
   }
 }
 
