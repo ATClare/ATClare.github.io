@@ -1153,7 +1153,7 @@ body.welcome-page::before {
   position: fixed;
   inset: -10vh -10vw; /* overscan so drift doesn’t reveal edges */
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
   opacity: 0.30;
 
   /* Layer 1: slow drifting “blobs” + soft shimmer */
@@ -1174,7 +1174,7 @@ body.welcome-page::after {
   position: fixed;
   inset: -10vh -10vw;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 
   /* Pattern: subtle contour lines + grain */
   background-image:
@@ -1193,12 +1193,6 @@ body.welcome-page::after {
   opacity: 0.10;
   mix-blend-mode: multiply;
   animation: welcome-pattern-drift 22s linear infinite;
-}
-
-/* Ensure all page content renders above the animated background layer */
-body.welcome-page > * {
-  position: relative;
-  z-index: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
