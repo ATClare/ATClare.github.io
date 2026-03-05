@@ -69,8 +69,8 @@ We work on **manufacturing process development** for high-performance components
 
 ## Explore
 
-- **Projects:** /projects/
-- **Publications:** /publications/
-- **Group & opportunities:** /group/
-- **Spinouts:** /spinouts/
-- **Contact:** Adam.clare@ubc.ca
+- **Projects:** [ /projects/ ](/projects/)
+- **Publications:** [ /publications/ ](/publications/)
+- **Group & opportunities:** [ /group/ ](/group/)
+- **Spinouts:** [ /spinouts/ ](/spinouts/)
+- **Contact:** [ Adam.clare@ubc.ca ](mailto:Adam.clare@ubc.ca)
