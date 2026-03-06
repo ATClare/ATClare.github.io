@@ -1235,6 +1235,18 @@ body.welcome-page::after {
   margin: 0 0 1.25rem;
 }
 
+/* Red dot accent by name on the welcome page */
+body.welcome-page .post-header .post-title::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  border-radius: 999px;
+  background: #d11a2a;
+  vertical-align: middle;
+}
+
 .hero-gears {
   position: absolute;
   top: -0.5rem;
