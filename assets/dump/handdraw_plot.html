@@ -21,11 +21,20 @@
       stroke-linejoin: round;
       stroke-dasharray: var(--dash, 1000);
       stroke-dashoffset: var(--dash, 1000);
-      animation: draw var(--dur, 1.2s) ease forwards;
+      animation: draw var(--dur, 1.8s) ease forwards;
+      animation-delay: var(--delay, 0s);
+    }
+
+    .scribble-text {
+      font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", cursive;
+      fill: var(--muted);
+      opacity: 0;
+      animation: popin 0.55s ease forwards;
       animation-delay: var(--delay, 0s);
     }
 
     @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes popin { to { opacity: 1; } }
 
     /* subtle wobble */
     .wobble { filter: url(#wobble); }
@@ -48,13 +57,37 @@
             <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="1" seed="2" result="noise"/>
             <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
           </filter>
+
+          <!-- clip hatch to the area under the curve -->
+          <clipPath id="under-curve">
+            <path d="M170 82
+                     C 260 230, 330 330, 465 350
+                     C 600 330, 670 230, 760 82
+                     L760 350 L170 350 Z" />
+          </clipPath>
         </defs>
 
         <rect x="0" y="0" width="900" height="420" rx="18" fill="rgba(0,54,159,0.03)" />
 
         <!-- Axes -->
-        <path class="draw wobble" style="--dash: 860; --dur: 1.0s; --delay: 0.1s" d="M110 350 L820 350" stroke="var(--ink)" stroke-width="4" />
-        <path class="draw wobble" style="--dash: 520; --dur: 0.9s; --delay: 0.2s" d="M110 350 L110 70" stroke="var(--ink)" stroke-width="4" />
+        <path class="draw wobble" style="--dash: 860; --dur: 1.8s; --delay: 0.15s" d="M110 350 L820 350" stroke="var(--ink)" stroke-width="4" />
+        <path class="draw wobble" style="--dash: 520; --dur: 1.6s; --delay: 0.35s" d="M110 350 L110 70" stroke="var(--ink)" stroke-width="4" />
+
+        <!-- Axis numbers (handwritten-ish) -->
+        <g font-size="16" class="wobble">
+          <!-- x ticks: -2 -1 0 1 2 (approx) -->
+          <text class="scribble-text" style="--delay: 2.3s" x="220" y="388">-2</text>
+          <text class="scribble-text" style="--delay: 2.4s" x="340" y="388">-1</text>
+          <text class="scribble-text" style="--delay: 2.5s" x="460" y="388">0</text>
+          <text class="scribble-text" style="--delay: 2.6s" x="578" y="388">1</text>
+          <text class="scribble-text" style="--delay: 2.7s" x="696" y="388">2</text>
+
+          <!-- y ticks: 2 4 6 8 -->
+          <text class="scribble-text" style="--delay: 2.45s" x="72" y="298">2</text>
+          <text class="scribble-text" style="--delay: 2.55s" x="72" y="240">4</text>
+          <text class="scribble-text" style="--delay: 2.65s" x="72" y="182">6</text>
+          <text class="scribble-text" style="--delay: 2.75s" x="72" y="124">8</text>
+        </g>
 
         <!-- Tick marks (x) -->
         <g stroke="var(--ink)" stroke-width="2" class="wobble">
@@ -73,10 +106,25 @@
           <path class="draw" style="--dash: 80; --dur: 0.6s; --delay: 0.9s" d="M100 118 L110 118" />
         </g>
 
+        <!-- Hand-drawn hatch under the curve -->
+        <g clip-path="url(#under-curve)" class="wobble" stroke="rgba(0,54,159,0.28)" stroke-width="2">
+          <path class="draw" style="--dash: 1400; --dur: 2.6s; --delay: 2.0s" d="M150 360 L360 70" />
+          <path class="draw" style="--dash: 1600; --dur: 2.6s; --delay: 2.05s" d="M190 370 L400 70" />
+          <path class="draw" style="--dash: 1700; --dur: 2.6s; --delay: 2.1s" d="M230 380 L440 70" />
+          <path class="draw" style="--dash: 1800; --dur: 2.6s; --delay: 2.15s" d="M270 390 L480 70" />
+          <path class="draw" style="--dash: 1900; --dur: 2.6s; --delay: 2.2s" d="M310 400 L520 70" />
+          <path class="draw" style="--dash: 2000; --dur: 2.6s; --delay: 2.25s" d="M350 410 L560 70" />
+          <path class="draw" style="--dash: 2100; --dur: 2.6s; --delay: 2.3s" d="M390 420 L600 70" />
+          <path class="draw" style="--dash: 2200; --dur: 2.6s; --delay: 2.35s" d="M430 430 L640 70" />
+          <path class="draw" style="--dash: 2300; --dur: 2.6s; --delay: 2.4s" d="M470 440 L680 70" />
+          <path class="draw" style="--dash: 2400; --dur: 2.6s; --delay: 2.45s" d="M510 450 L720 70" />
+          <path class="draw" style="--dash: 2500; --dur: 2.6s; --delay: 2.5s" d="M550 460 L760 70" />
+        </g>
+
         <!-- Curve y=x^2 (precomputed polyline-ish path) -->
         <path
           class="draw wobble"
-          style="--dash: 1600; --dur: 2.0s; --delay: 1.2s"
+          style="--dash: 1600; --dur: 3.2s; --delay: 1.4s"
           stroke="var(--accent)"
           stroke-width="5"
           d="M170 82
@@ -84,7 +132,7 @@
              C 600 330, 670 230, 760 82" />
 
         <!-- Label -->
-        <text x="130" y="105" font-size="20" fill="var(--muted)">y = x²</text>
+        <text class="scribble-text wobble" style="--delay: 2.9s" x="130" y="105" font-size="20">y = x²</text>
       </svg>
     </div>
   </div>
