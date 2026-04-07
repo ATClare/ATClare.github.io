@@ -12,4 +12,10 @@ toc:
   sidebar: left
 ---
 
-[Full CV (PDF)](/assets/pdf/full_cv.pdf)
+<div class="content-card">
+  <p><strong>Full CV available here:</strong> <a href="/assets/pdf/full_cv.pdf">PDF version, January 2026</a>.</p>
+  <p>
+    The summary below highlights major appointments from the full document together with academic background and selected
+    professional distinctions.
+  </p>
+</div>

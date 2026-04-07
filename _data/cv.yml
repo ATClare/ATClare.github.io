@@ -27,19 +27,37 @@
       description:
         - Teaching and Learning in Higher Education
 
-- title: Experience
+- title: Main Appointments
   type: time_table
   contents:
+    - title: Research Chair, Rolls-Royce Royal Academy Research Chair
+      institution: Rolls-Royce / Royal Academy of Engineering
+      year: 2019 - Present
+    - title: Founder, Non-Executive Director and Scientific Advisor
+      institution: Texture Jet Ltd.
+      year: 2019 - Present
+    - title: Secretary
+      institution: CIRP STC-E
+      year: 2019 - Present
     - title: Professor
-      institution: University of British Columbia
-      year: 2022 - Present
-    - title: Professor of Manufacturing Engineering
+      institution: Kanazawa University, Japan
+      year: 2019 - Present
+    - title: Deputy Director, Rolls-Royce UTC
       institution: University of Nottingham
       year: 2018 - Present
-    - title: Associate Professor
+    - title: Li Dak Sum Professor of Advanced Manufacturing
+      institution: University of Nottingham Ningbo, China
+      year: 2018 - Present
+    - title: Full Professor of Manufacturing Engineering
+      institution: University of Nottingham
+      year: 2018 - Present
+    - title: Secondment
+      institution: Rolls-Royce PLC Submarines
+      year: 2016 - 2017
+    - title: Associate Professor of Advanced Manufacturing
       institution: University of Nottingham
       year: 2015 - 2017
-    - title: Assistant Professor
+    - title: Assistant Professor of Advanced Manufacturing
       institution: University of Nottingham
       year: 2010 - 2015
     - title: Research Associate

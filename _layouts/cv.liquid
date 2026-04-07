@@ -1,35 +1,37 @@
 ---
 layout: default
 ---
-{% unless site.data.resume %}
+{% if site.data.cv and site.data.cv.size > 0 %}
   <div class="post">
     <header class="post-header page-hero">
       <div class="page-hero-copy">
         {% if page.eyebrow %}
           <p class="page-eyebrow">{{ page.eyebrow }}</p>
         {% endif %}
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
-        {% endif %}
-      </h1>
+      <h1 class="post-title">{{ page.title }}</h1>
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
       {% endif %}
       {% if page.intro %}
         <p class="page-intro">{{ page.intro }}</p>
       {% endif %}
+      {% if page.cv_pdf %}
+        <p class="page-intro">
+          <strong>Full CV available here:</strong>
+          <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer">
+            PDF version, January 2026
+          </a>
+        </p>
+      {% endif %}
       </div>
     </header>
 
     <article class="page-body">
+      {% if content and content != "" %}
+        <div class="cv-page-intro">
+          {{ content }}
+        </div>
+      {% endif %}
       <div class="cv">
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
@@ -55,35 +57,37 @@ layout: default
       </div>
     </article>
   </div>
-{% else %}
+{% elsif site.data.resume %}
   <div class="post">
     <header class="post-header page-hero">
       <div class="page-hero-copy">
         {% if page.eyebrow %}
           <p class="page-eyebrow">{{ page.eyebrow }}</p>
         {% endif %}
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
-        {% endif %}
-      </h1>
+      <h1 class="post-title">{{ page.title }}</h1>
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
       {% endif %}
       {% if page.intro %}
         <p class="page-intro">{{ page.intro }}</p>
       {% endif %}
+      {% if page.cv_pdf %}
+        <p class="page-intro">
+          <strong>Full CV available here:</strong>
+          <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer">
+            PDF version, January 2026
+          </a>
+        </p>
+      {% endif %}
       </div>
     </header>
 
     <article class="page-body">
+      {% if content and content != "" %}
+        <div class="cv-page-intro">
+          {{ content }}
+        </div>
+      {% endif %}
       <div class="cv">
         {% for data in site.data.resume %}
           {% if site.jsonresume and site.jsonresume.size > 0 %}
@@ -130,4 +134,4 @@ layout: default
       </div>
     </article>
   </div>
-{% endunless %}
+{% endif %}
