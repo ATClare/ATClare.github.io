@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="24" fill="url(#bg)" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="64" y="78" font-size="18" fill="#475569">Top papers</text>
+  <text x="64" y="110" font-size="22" font-weight="700" fill="#1e293b">2016 · 403 cites</text>
+  <text x="64" y="170" font-size="26" font-weight="600" fill="#0f172a">Quantification and</text>
+<text x="64" y="204" font-size="26" font-weight="600" fill="#0f172a">characterisation of porosity in</text>
+<text x="64" y="238" font-size="26" font-weight="600" fill="#0f172a">selectively laser melted</text>
+<text x="64" y="272" font-size="26" font-weight="600" fill="#0f172a">Al–Si10–Mg using X-ray computed</text>
+  <text x="64" y="360" font-size="14" fill="#64748b">Click for DOI / paper link</text>
+</svg>
