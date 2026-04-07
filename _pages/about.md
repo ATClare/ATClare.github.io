@@ -1,76 +1,87 @@
 ---
-layout: about
-title: Adam Clare
-permalink: /
-subtitle: <a href='https://www.ubc.ca/'>University of British Columbia</a> · <em>Study with me!</em>
-
-# Keep the sidebar minimal; this site will be lab-first.
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false
-  more_info: >
-    <p><strong>Adam Clare</strong></p>
-    <p>Manufacturing Engineering</p>
-    <p>Vancouver, BC</p>
-
+noteId: "2cd53af0318111f1881c69c5acded62b"
+tags: []
+layout: "about"
+title: "Adam Clare FREng"
+permalink: "/"
+subtitle: "<a href='https://www.ubc.ca/'>University of British Columbia</a> · Professor of Manufacturing Engineering"
+body_class: "home-bmw"
 news: false
 selected_papers: false
 social: true
 projects: false
+
 ---
 
-<div class="hero">
-  <p class="hero-tagline">
-    We develop manufacturing processes for high-performance components — spanning additive manufacturing, materials processing, and process innovation.
-<!-- deploy: trigger rebuild -->
-  </p>
+<section class="hero hero-premium">
+  <div class="hero-shell">
+    <div class="hero-media">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-label="Manufacturing lab highlight video"
+      >
+        <source src="/assets/video/cnc-plasma-cutting-commons.webm" type="video/webm">
+      </video>
+    </div>
 
-  <div class="hero-cloud" aria-label="Keywords">
-    <svg viewBox="0 0 900 150" width="100%" height="100%" role="img" aria-label="Keywords word cloud">
-      <rect x="0" y="0" width="900" height="150" rx="18" fill="rgba(0,54,159,0.04)" stroke="rgba(0,0,0,0.08)" />
+    <div class="hero-copy hero-copy-home">
+      <div class="hero-home-grid">
+        <div class="hero-home-text">
+          <p class="hero-kicker">Advanced Manufacturing Research</p>
+          <h1 class="hero-name">Adam Clare</h1>
+          <p class="hero-role">Professor of Manufacturing Engineering at the University of British Columbia</p>
+          <p class="hero-intro">
+            Research spanning additive manufacturing, electrochemical jet processing, surface engineering, and manufacturing
+            methods that move from mechanism to reliable industrial use.
+          </p>
 
-      <g fill="rgba(0,0,0,0.78)">
-        <text x="68" y="64" font-size="26" font-weight="700">Additive manufacturing</text>
-        <text x="520" y="54" font-size="22" font-weight="650">Process development</text>
-        <text x="390" y="114" font-size="20" font-weight="600">Materials processing</text>
-        <text x="92" y="118" font-size="18" font-weight="650">Design-for-manufacture</text>
+          <div class="hero-actions">
+            <a class="hero-action primary" href="/projects/">View projects</a>
+            <a class="hero-action" href="/publications/">Browse publications</a>
+            <a class="hero-action" href="/group/">Join the group</a>
+          </div>
+        </div>
 
-        <text x="690" y="116" font-size="16" font-weight="600" opacity="0.85">Surface engineering</text>
-
-        <!-- vertical accents -->
-        <text x="40" y="130" font-size="14" font-weight="700" opacity="0.55" transform="rotate(-90 40 130)">Metrology</text>
-        <text x="862" y="128" font-size="14" font-weight="700" opacity="0.45" transform="rotate(90 862 128)">Qualification</text>
-
-        <!-- small supporting terms -->
-        <text x="610" y="88" font-size="14" font-weight="600" opacity="0.75">Surface integrity</text>
-        <text x="268" y="86" font-size="14" font-weight="600" opacity="0.75">Toolpaths</text>
-      </g>
-
-      <!-- subtle accent strokes -->
-      <path d="M24 28h70" stroke="rgba(0,54,159,0.35)" stroke-width="4" stroke-linecap="round" />
-      <path d="M806 122h70" stroke="rgba(0,54,159,0.25)" stroke-width="4" stroke-linecap="round" />
-    </svg>
+        <div class="hero-portrait-panel">
+          <img class="hero-portrait" src="/assets/img/prof_pic_color.png" alt="Portrait of Adam Clare">
+          <p class="hero-portrait-caption">
+            Process capability, materials response, metrology, and translation into deployable manufacturing methods.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<hr>
+<section class="section-shell">
+  <p class="section-eyebrow">Explore</p>
+  <h2>Start Here</h2>
 
-## About
-
-We work on **manufacturing process development** for high-performance components—bridging fundamentals (process physics, materials response) and translation (tooling, metrology, repeatability).
-
-## Research themes
-
-- **Additive manufacturing**: process development, part qualification, and surface/feature control
-- **Electrochemical jet processing**: controllable micro-machining and programmable surface structuring
-- **Surface engineering & functional textures**
-- **Data-informed manufacturing**: measurement, mapping, and analysis to enable robust processes
-
-## Explore
-
-- **Projects:** [ /projects/ ](/projects/)
-- **Publications:** [ /publications/ ](/publications/)
-- **Group & opportunities:** [ /group/ ](/group/)
-- **Spinouts:** [ /spinouts/ ](/spinouts/)
-- **Contact:** [ Adam.clare@ubc.ca ](mailto:Adam.clare@ubc.ca)
+  <div class="route-grid">
+    <a class="route-card" href="/publications/">
+      <span class="route-index">01</span>
+      <h3>Publications</h3>
+      <p>See papers, topics, and recent directions across the group’s research output.</p>
+    </a>
+    <a class="route-card" href="/projects/">
+      <span class="route-index">02</span>
+      <h3>Projects</h3>
+      <p>Browse active themes and project pages with process-specific detail and imagery.</p>
+    </a>
+    <a class="route-card" href="/group/">
+      <span class="route-index">03</span>
+      <h3>Group & Opportunities</h3>
+      <p>Find ways to study, collaborate, or join ongoing work in the lab.</p>
+    </a>
+    <a class="route-card" href="/spinouts/">
+      <span class="route-index">04</span>
+      <h3>Spinouts</h3>
+      <p>Follow the translation of research into companies, products, and applied impact.</p>
+    </a>
+  </div>
+</section>

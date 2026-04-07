@@ -2,7 +2,7 @@
 layout: page
 title: My Family
 permalink: /family/
-nav: true
+nav: false
 nav_order: 4
 description: My family
 ---

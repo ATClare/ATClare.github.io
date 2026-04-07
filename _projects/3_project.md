@@ -2,7 +2,7 @@
 layout: page
 title: stochastic structures and optimisation
 description: a project that redirects to another website
-img: assets/img/7.jpg
+img: assets/img/lab/placeholder-hero.svg
 redirect: https://unsplash.com
 importance: 3
 category: work

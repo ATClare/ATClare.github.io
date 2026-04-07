@@ -5,7 +5,7 @@
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Adam
 middle_name:
-last_name: Clare, FREng
+last_name: Clare FREng
 email: Adam.clare@ubc.ca
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Adam Clare (UBC) — Professor of Manufacturing Engineering focused on additive manufacturing, materials processing, and manufacturing process innovation.
@@ -489,7 +489,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

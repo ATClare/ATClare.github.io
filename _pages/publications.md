@@ -2,11 +2,20 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications (reverse chronological order).
+description: Publications and selected papers across manufacturing engineering, process innovation, and advanced processing.
+eyebrow: Research Output
+intro: Publications are listed in reverse chronological order and reflect the lab’s work across additive manufacturing, electrochemical jet processing, structured materials, surface engineering, and process capability.
 img: assets/img/lab/publications-hero.jpg
 nav: true
 nav_order: 2
 ---
+
+<div class="content-band">
+  <p>
+    The publication record spans both fundamental and applied work, with a strong emphasis on process understanding,
+    measurement, materials response, and engineering routes to more reliable manufacturing outcomes.
+  </p>
+</div>
 
 <div class="pub-controls">
   {% include bib_search.liquid %}
@@ -18,7 +27,6 @@ nav_order: 2
     </select>
 
     <button id="pubClear" class="pub-filter-btn" type="button">Clear</button>
-
   </div>
 </div>
 

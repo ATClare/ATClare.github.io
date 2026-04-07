@@ -2,7 +2,7 @@
 layout: page
 title: sustainable machining processes
 description: with background image
-img: assets/img/4.jpg
+img: assets/img/lab/placeholder-hero.svg
 importance: 1
 category: work
 related_publications: true

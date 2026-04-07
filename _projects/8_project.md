@@ -2,10 +2,9 @@
 layout: page
 title: project 8
 description: EDM for aerospace applications
-img: assets/img/9.jpg
+img: assets/img/lab/placeholder-hero.svg
 importance: 2
 category: work
-giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.

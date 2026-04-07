@@ -2,8 +2,9 @@
 layout: page
 title: Friends and Collaborators
 permalink: /collaborators/
-nav: true
+nav: false
 nav_order: 7
+nav_title: Collaborators
 description: Friends and collaborators map
 map: true
 ---
